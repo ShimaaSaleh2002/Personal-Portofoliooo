@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #a3a3a3; /* الرمادي اللي في الصورة */
+    --text-dark: #1a1a1a;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.job-title {
+    font-size: 2rem;
+    text-align: left;
+}
+
+/* Intro Section */
+.intro {
+    background: var(--white);
+    padding: 100px 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.intro-text { flex: 2; font-size: 1.8rem; }
+.intro-description { flex: 1; }
+
+.btn-black {
+    background: #000;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+/* Projects */
+.projects {
+    background: var(--white);
+    padding: 50px;
+    border-top: 1px solid #ddd;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: padding-left 0.3s ease;
+}
+
+.project-item:hover {
+    padding-left: 20px;
+    background: #f9f9f9;
+}
+
+.category { font-size: 1rem; color: #666; }
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.footer h2 { font-size: 4rem; }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
